@@ -42,11 +42,11 @@ class Book(models.Model):
 
     description = models.TextField()
 
-    image = models.ImageField(
-        upload_to="books/",
-        blank=True,
-        null=True
-    )
+
+    image = models.URLField(
+    blank=True,
+    null=True
+)
 
     created_at = models.DateTimeField(auto_now_add=True)
 
